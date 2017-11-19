@@ -1,27 +1,25 @@
-@extends('layout')
+@extends('welcome')
 
 
 @section('content')
 
+
+    <br>
     <div class="row">
 
-        <div class="col-lg-12 margin-tb">
-
-            <div class="pull-left">
-
+        <div class="col-sm-10 margin-tb">
                 <h2>Add New Article</h2>
-
-            </div>
-
-            <div class="pull-right">
-
-                <a class="btn btn-primary" href="{{ route('articles.index') }}"> Back</a>
-
-            </div>
-
         </div>
-
+        <div class="col-sm-2 margin-tb">
+                <a class="btn btn-default"  href="{{ route('articles.index') }}"> BACK</a>
+        </div>
     </div>
+
+      <br>
+
+
+
+      <div class="row">
 
 
     @if (count($errors) < 0)
@@ -50,6 +48,8 @@
          @include('articles.form')
 
     {!! Form::close() !!}
+
+      </div>
 
 
 @endsection
