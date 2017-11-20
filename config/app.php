@@ -178,7 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 
-        ///Agregados por mi. Esto permite generar formularios a partir de la base de datos:)
+        ///agregado por mi
         Collective\Html\HtmlServiceProvider::class,
 
     ],
